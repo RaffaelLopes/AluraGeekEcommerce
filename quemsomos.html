@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <!--HEAD-->
+
+  <head>
+  
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITULO DA PÁGINA + ÍCONE DE GUIA -->
+
+    <title>Alura Geek</title>
+    <link
+      rel="icon"
+      href="images/logo/logo.svg"
+      type="image/gif"
+      sizes="18x18"
+    />
+
+    <!-- LINKS CSS + FONTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/quemsomos.css" />
+    <link rel="stylesheet" href="css/politicapriv.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="logo--div" onclick="location.href='index.html'">
+        <img class="logo--img" src="images/logo/logo.svg" />
+        <h1 class="logo--h1"><span>Alura</span>Geek</h1>
+      </div>
+
+      <div class="login--div">
+        <button class="login--button"><a href="login.html">Login</a></button>
+      </div>
+
+      <div class="search--div">
+        <input class="search--input" placeholder="Pesquisar..." />
+        <img class="search--img" src="images/logo/lupa.svg" />
+      </div>
+    </header>
+
+       <!-- QUEM SOMOS -->
+       <div class="nerds">
+        <h2>Somos nerds como você!</h2>
+        <p>Nosso endereço: Rua dos Nerds, 171. Jardim Social, Curitiba PR. CEP 82520-040</p>
+        <p>Conheça nossos princípios e valores!</p>
+        <p>O Alura Geek começou como um site regional de coisas para nerds na cidade de Curitiba em 1998. Estando numa 
+        cidade onde a cultura dos nerds  é bastante enraizada, não demorou muito a crescer e se tornar um site reconhecido
+        nacionalmente abrangendo nerds de vários estados e até mesmo de fora do Brasil.</p>
+      </div>
+      
+        
+       
+     <!-- ABOUT / FORMULARIO -->
+
+     <section class="about--section">
+        <div>
+          <h2><img src="images/logo/logo.svg" /><span>Alura</span>Geek</h2>
+          <ul>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="politicprivac.html">Política de privacidade</a></li>
+          </ul>
+        </div>
+  
+        <form class="formulario" onsubmit="evitarRecarga(event)">
+          <h3>Fale conosco</h3>
+  
+          <div class="grupo-form">
+            <label for="input">Nome</label>
+            <input maxlength="40" id="input" />
+          </div>
+  
+          <div class="grupo-form">
+            <label for="textarea">Escreva tua mensagem</label>
+            <textarea maxlength="120" id="textarea"></textarea>
+          </div>
+  
+          <button class="formulario--button" onclick="enviarMensaje();">Enviar mensagem</button>
+        </form>
+      </section>
+  
+      <!-- FOOTER -->
+  
+      <footer>
+        <p>Copyright © 2023 by Rafael Lopes Ferreira | All Rights Reserved.</p>
+      </footer>
+  
+      <!-- LINK  JAVASCRIPT -->
+  
+      <script src="javascript/contactform.js"></script>
+    </body>
+  </html>
+  
