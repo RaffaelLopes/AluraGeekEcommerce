@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('buttons.css');
+@import url('header.css');
+@import url('banner-promo.css');
+@import url('grid-cards.css');
+@import url('footer.css');
+@import url('forms.css');
+@import url('allproducts.css');
+@import url('product-page.css');
+
+:root {
+	--branco: #FFF;
+	--preto-100: #464646;
+	--preto-50: #A2A2A2;
+	--preto-30: #A2A2A2;
+	--preto-5: #F5F5F5;
+	--azul-100: #2A7AE4;
+	--azul-80: #5595E9;
+	--azul-20: #D4E4FA;
+	--azul-bg: #EAF2FD;
+	--fonte-padrao: 'Raleway', sans-serif;
+}
+
+body {
+	font-family: var(--fonte-padrao);
+	font-style: normal;
+}
+
+footer {
+	background: var(--azul-bg);
+}
+
+.hidden {
+	display: none;
+}
